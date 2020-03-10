@@ -31,7 +31,6 @@ const HomeScreen = props => {
           data={props.characters}
           renderItem={({item}) => {
             const character = item;
-            console.log(character.image);
             return (
               <TouchableOpacity
                 onPress={() => console.log('me tocaste')}
@@ -43,7 +42,8 @@ const HomeScreen = props => {
                 <Text style={styles.characterName}>{character.name}</Text>
               </TouchableOpacity>
             );
-          }}></FlatList>
+          }}
+        />
       </SafeAreaView>
     </KeyboardAvoidingView>
   );

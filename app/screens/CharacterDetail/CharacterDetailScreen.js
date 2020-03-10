@@ -43,7 +43,8 @@ const HomeScreen = props => {
                 <Text style={styles.characterName}>{character.name}</Text>
               </TouchableOpacity>
             );
-          }}></FlatList>
+          }}
+        />
       </SafeAreaView>
     </KeyboardAvoidingView>
   );
